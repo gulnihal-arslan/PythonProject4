@@ -1,9 +1,9 @@
-Kütüphane Yönetim Sistemi 📚
+Kütüphane Yönetim Sistemi 
 Bu proje, Global AI Hub Python 202 Bootcamp kapsamında geliştirilen, nesne yönelimli programlama (OOP) prensiplerini, harici API entegrasyonunu ve FastAPI ile kendi API'nizi oluşturmayı birleştiren üç aşamalı bir uygulamadır.
 
 Amacımız, basit bir komut satırı uygulamasından başlayarak, onu harici verilerle zenginleştirmek ve son olarak bir web servisi haline getirmektir.
 
-Özellikler ve Aşamalar ✨
+Özellikler ve Aşamalar 
 Aşama 1: OOP ile Terminalde Çalışan Kütüphane
 Book ve Library Sınıfları: Kitapları ve kütüphane operasyonlarını yöneten nesne tabanlı bir yapı.
 
@@ -21,7 +21,7 @@ API Endpoint'leri: Kitapları listeleme, ekleme ve silme işlemleri için özel 
 
 Pydantic Veri Modelleri: API veri giriş ve çıkışları, güvenli ve düzenli bir şekilde yönetilir.
 
-Kurulum ⚙️
+Kurulum 
 Projeyi yerel makinenize kurmak ve çalıştırmak için aşağıdaki adımları izleyin:
 
 Depoyu Klonlayın:
@@ -39,7 +39,6 @@ Kullanım
 Terminal Uygulaması (Aşama 1 & 2)
 Terminal uygulamasını başlatmak için main.py dosyasını çalıştırın:
 
-Bash
 
 python main.py
 Uygulama, size interaktif bir menü sunacak ve buradan kitap yönetimi işlemlerini yapabilirsiniz.
@@ -47,7 +46,7 @@ Uygulama, size interaktif bir menü sunacak ve buradan kitap yönetimi işlemler
 FastAPI Uygulaması (Aşama 3)
 API sunucusunu başlatmak için uvicorn komutunu kullanın:
 
-Bash
+
 
 uvicorn api:app --reload
 API, varsayılan olarak http://127.0.0.1:8000 adresinde çalışacaktır. Tarayıcınızdan http://127.0.0.1:8000/docs adresine giderek otomatik olarak oluşturulan interaktif API dokümantasyonunu görüntüleyebilirsiniz.
@@ -63,7 +62,6 @@ DELETE /books/{isbn}: Belirtilen ISBN'e sahip kitabı kütüphaneden siler.
 
 Testler
 Projedeki tüm fonksiyonların ve API endpoint'lerinin doğru çalıştığından emin olmak için pytest ile test senaryoları yazılmıştır. Testleri çalıştırmak için:
-
-Bash
+pytest
 
 pytest
